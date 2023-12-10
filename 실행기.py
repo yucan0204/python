@@ -1,6 +1,7 @@
 import discord
 import asyncio
 import random
+import os
 
 from discord.utils import get
 
@@ -54,5 +55,6 @@ async def on_ready():
     await client.change_presence(status=discord.Status.online, activity=game)
     ch = client.get_channel(1182283526549278831)
     await ch.send (f"✅ **망고봇이 시작하였습니다**")
-
-client.run("MTE4MjYxOTc5MjIwMTQ5NDYwOA.GXZEiO.la3GaV0R7dfIKBMSPEt2Y5D85dtGJjf52FHpcs") # 토큰 적는곳
+    
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token) # 토큰 적는곳
