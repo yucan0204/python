@@ -57,4 +57,4 @@ async def on_ready():
     await ch.send (f"✅ **망고봇이 시작하였습니다**")
     
 access_token = os.environ["BOT_TOKEN"]
-client.run(access_token) # 토큰 적는곳
+client.run(MTE4MjYxOTc5MjIwMTQ5NDYwOA.GwxIZk.35wUlR8i1DybwAjuBLYQ1sdG5iFnTX4Hhchp8U) # 토큰 적는곳
